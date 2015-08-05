@@ -121,6 +121,66 @@ header.elearning-charcoal {
 	}
 }
 
+.elearning-section {
+    
+    ul {
+
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+
+        padding: 0 0 12px 25px;
+    }
+
+    h4 {
+
+        color: $brand-elearning-orange;
+        font-size: 14px;
+
+    }
+
+}
+
+p.section-more {
+    
+    color: $brand-elearning-gray;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 12px;
+
+}
+
+span.section-more {
+    
+    color: $brand-elearning-orange;
+    border: 1px solid $brand-elearning-gray;
+    display: inline-block;
+    width: 24px;
+    line-height: 18px;
+    margin-left: 3px;
+
+}
+
+.elearning-section.materials{ 
+
+    li {
+        
+        background: url(../images/elearning-lit-bullet.png) no-repeat left top;
+
+    }
+}
+
+.elearning-section.discussion {
+    
+    li {
+
+        background: url(../images/elearning-discussion-bullet.png) no-repeat left top;
+
+    }
+}
+
 
 header .elearning-section {
 	
@@ -138,12 +198,53 @@ header .elearning-section {
 	display: none;
 }
 
-.elearning-aside {
-	
-	display: none;
+
+.elearning-doc-image {
+    
+    display: none;
 }
 
+footer {
+    
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 
+.elearning-aside {
+
+    border-right: 10px solid $brand-elearning-silver;
+    display: block;
+
+    ul {
+
+        list-style-type: none;
+        padding-left: 10px;
+
+    }
+
+    ul.member-actions-menu {
+
+        padding-top: 76px;
+        padding-bottom: 40px;
+
+        li {
+
+            padding-bottom: 10px;
+        }
+    }
+
+    ul.product-categories-menu {
+
+        padding-top: 16px;
+
+        li {
+
+            padding-bottom: 36px;
+        }
+
+    }
+
+}
 
 @media (min-width: $screen-lg-min) {
     
@@ -152,62 +253,42 @@ header .elearning-section {
     	display: none;
     }
 
-    .elearning-login {
-
-    	display: block;
-
-    	input {
-
-    		width: 76%;
-
-    	}
-
-    	label {
-
-    		width: 20%;
-    	}
-
-    	button {
-
-    		width: 80%;
-    	}
-    }
-
     .elearning-aside {
 
-    	display: block;
-    	border-right: 10px solid $brand-elearning-silver;
-
-    	ul {
-
-    		list-style-type: none;
-    		padding-left: 10px;
-
-    	}
-
-    	ul.member-actions-menu {
-
-    		padding-top: 76px;
-    		padding-bottom: 40px;
-
-    		li {
-
-    			padding-bottom: 10px;
-    		}
-    	}
-
-    	ul.product-categories-menu {
-
-    		padding-top: 16px;
-
-    		li {
-
-    			padding-bottom: 36px;
-    		}
-
-    	}
-
-
-
+        display: block;
     }
+
+    .elearning-login  {
+
+    	display: block;
+        font-weight: bold;
+
+        .form-inline {
+
+        	input {
+
+        		width: 74%;
+
+        	}
+
+        	label {
+                
+        		width: 20%;
+                margin-right: 10px;
+
+        	}
+
+        	button {
+
+        		width: 80%;
+        	}
+        }
+    }
+
+    .elearning-doc-image {
+
+        display: block;
+    }
+
+    
  }

@@ -8848,74 +8848,135 @@ header.elearning-charcoal img {
   color: #D77A27;
 }
 
-/* line 125, ../sass/_custom.scss */
+/* line 126, ../sass/_custom.scss */
+.elearning-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 132, ../sass/_custom.scss */
+.elearning-section li {
+  padding: 0 0 12px 25px;
+}
+/* line 137, ../sass/_custom.scss */
+.elearning-section h4 {
+  color: #D77A27;
+  font-size: 14px;
+}
+
+/* line 146, ../sass/_custom.scss */
+p.section-more {
+  color: #5f5f5f;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* line 155, ../sass/_custom.scss */
+span.section-more {
+  color: #D77A27;
+  border: 1px solid #5f5f5f;
+  display: inline-block;
+  width: 24px;
+  line-height: 18px;
+  margin-left: 3px;
+}
+
+/* line 168, ../sass/_custom.scss */
+.elearning-section.materials li {
+  background: url(../images/elearning-lit-bullet.png) no-repeat left top;
+}
+
+/* line 177, ../sass/_custom.scss */
+.elearning-section.discussion li {
+  background: url(../images/elearning-discussion-bullet.png) no-repeat left top;
+}
+
+/* line 185, ../sass/_custom.scss */
 header .elearning-section {
   padding: 40px 20px 40px 20px;
 }
 
-/* line 131, ../sass/_custom.scss */
+/* line 191, ../sass/_custom.scss */
 .elearning-section {
   margin-bottom: 10px;
 }
 
-/* line 136, ../sass/_custom.scss */
+/* line 196, ../sass/_custom.scss */
 .elearning-login {
   display: none;
 }
 
-/* line 141, ../sass/_custom.scss */
-.elearning-aside {
+/* line 202, ../sass/_custom.scss */
+.elearning-doc-image {
   display: none;
 }
 
+/* line 207, ../sass/_custom.scss */
+footer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* line 213, ../sass/_custom.scss */
+.elearning-aside {
+  border-right: 10px solid #f1f1f1;
+  display: block;
+}
+/* line 218, ../sass/_custom.scss */
+.elearning-aside ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+/* line 225, ../sass/_custom.scss */
+.elearning-aside ul.member-actions-menu {
+  padding-top: 76px;
+  padding-bottom: 40px;
+}
+/* line 230, ../sass/_custom.scss */
+.elearning-aside ul.member-actions-menu li {
+  padding-bottom: 10px;
+}
+/* line 236, ../sass/_custom.scss */
+.elearning-aside ul.product-categories-menu {
+  padding-top: 16px;
+}
+/* line 240, ../sass/_custom.scss */
+.elearning-aside ul.product-categories-menu li {
+  padding-bottom: 36px;
+}
+
 @media (min-width: 1200px) {
-  /* line 150, ../sass/_custom.scss */
+  /* line 251, ../sass/_custom.scss */
   .elearning-mobile-header {
     display: none;
   }
 
-  /* line 155, ../sass/_custom.scss */
-  .elearning-login {
+  /* line 256, ../sass/_custom.scss */
+  .elearning-aside {
     display: block;
   }
-  /* line 159, ../sass/_custom.scss */
-  .elearning-login input {
-    width: 76%;
+
+  /* line 261, ../sass/_custom.scss */
+  .elearning-login {
+    display: block;
+    font-weight: bold;
   }
-  /* line 165, ../sass/_custom.scss */
-  .elearning-login label {
+  /* line 268, ../sass/_custom.scss */
+  .elearning-login .form-inline input {
+    width: 74%;
+  }
+  /* line 274, ../sass/_custom.scss */
+  .elearning-login .form-inline label {
     width: 20%;
+    margin-right: 10px;
   }
-  /* line 170, ../sass/_custom.scss */
-  .elearning-login button {
+  /* line 281, ../sass/_custom.scss */
+  .elearning-login .form-inline button {
     width: 80%;
   }
 
-  /* line 176, ../sass/_custom.scss */
-  .elearning-aside {
+  /* line 288, ../sass/_custom.scss */
+  .elearning-doc-image {
     display: block;
-    border-right: 10px solid #f1f1f1;
-  }
-  /* line 181, ../sass/_custom.scss */
-  .elearning-aside ul {
-    list-style-type: none;
-    padding-left: 10px;
-  }
-  /* line 188, ../sass/_custom.scss */
-  .elearning-aside ul.member-actions-menu {
-    padding-top: 76px;
-    padding-bottom: 40px;
-  }
-  /* line 193, ../sass/_custom.scss */
-  .elearning-aside ul.member-actions-menu li {
-    padding-bottom: 10px;
-  }
-  /* line 199, ../sass/_custom.scss */
-  .elearning-aside ul.product-categories-menu {
-    padding-top: 16px;
-  }
-  /* line 203, ../sass/_custom.scss */
-  .elearning-aside ul.product-categories-menu li {
-    padding-bottom: 36px;
   }
 }

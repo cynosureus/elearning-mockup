@@ -9,6 +9,12 @@
 
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet">
+ 
+
+  
+   
+
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,11 +29,11 @@
       <div class ="row">
         
 
-        <section class="col-lg-9 pull-right"> 
+        <section class="col-lg-9 col-md-12 pull-right"> 
           <header class = "elearning-charcoal elearning-mobile-header row">
             
              <div class = "col-xs-4 text-left">
-              <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="font-size: 20px;"></span>   
+              <span class="glyphicon glyphicon-menu-hamburger toggle-panel" aria-hidden="true" style="font-size: 20px;"></span>   
             </div>
 
             <div class = "col-xs-4 text-center">
@@ -49,12 +55,12 @@
              
                 <form class="form-inline">
                   <div class="form-group col-lg-5">
-                    <label for="exampleInputName2" class="text-uppercase">Name</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    <label for="exampleInputName2" class="text-uppercase">Username</label>
+                    <input type="text" class="form-control" id="exampleInputName2">
                   </div>
                   <div class="form-group col-lg-5">
                     <label for="exampleInputEmail2" class="text-uppercase">Password</label>
-                    <input type="password" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                    <input type="password" class="form-control" id="exampleInputEmail2">
                   </div>
                   <div class="col-lg-2">
                     <button type="submit" class="btn btn-default text-uppercase">Submit</button>
@@ -67,12 +73,12 @@
               
             <div class = "col-lg-12 elearning-white">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-xs-12">
                   <h1>Aesthetics education and peer to peer interaction</h1>
                   <img src="images/elearning_header.png">
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 elearning-doc-image">
                   <img src="images/elearning-doc.jpg">
                 </div>
               </div>
@@ -85,31 +91,31 @@
             <div class = "col-lg-12 elearning-white">
               
               <div class="row">
-                <div class="col-xs-10">
+                <div class="col-xs-9">
                   <div class="row">
                     <div class="col-xs-4">
-                      <h4>Discussion Boards</h4>
+                      <h4 class="text-uppercase">Discussion Boards</h4>
                     </div>
                   </div>
                   
                 </div>
-                <div class="col-xs-2">
-                  <p>More</p>
+                <div class="col-xs-3">
+                  <p class="section-more text-uppercase text-right">More <span class="section-more expand text-center">+</span></p>
                 </div>
               </div>
 
               <ul>
                 <div class="row">
 
-                  <div class="col-xs-4">
+                  <div class="col-lg-4">
                     <li>PicoSure vs PicoWay</li>
                   </div>
 
-                   <div class="col-xs-4">
+                   <div class="col-lg-4">
                     <li>Optimizing Results</li>
                   </div>
 
-                   <div class="col-xs-4">
+                   <div class="col-lg-4">
                     <li>Tattoo Removal</li>
                   </div>
 
@@ -117,15 +123,15 @@
 
                 <div class="row">
 
-                  <div class="col-xs-4">
+                  <div class="col-lg-4">
                     <li>Treatment Parameters</li>
                   </div>
 
-                   <div class="col-xs-4">
+                   <div class="col-lg-4">
                     <li>Skin Remodeling</li>
                   </div>
 
-                   <div class="col-xs-4">
+                   <div class="col-lg-4">
                     <li>Troubleshooting</li>
                   </div>
 
@@ -133,15 +139,15 @@
 
                 <div class="row">
 
-                  <div class="col-xs-4">
+                  <div class="col-lg-4">
                     <li>Treatment Parameters</li>
                   </div>
 
-                   <div class="col-xs-4">
+                   <div class="col-lg-4">
                     <li>Laser Wavelengths</li>
                   </div>
 
-                   <div class="col-xs-4">
+                   <div class="col-lg-4">
                     <li>Melasma</li>
                   </div>
 
@@ -158,17 +164,17 @@
             <div class = "col-lg-12 elearning-white">
               
               <div class="row">
-                <div class="col-xs-10">
+                <div class="col-xs-9">
                   <div class="row">
-                    <div class="col-xs-6">
-                      <h4>Manuals</h4>
+                    <div class="col-lg-6">
+                      <h4 class="text-uppercase">Manuals</h4>
                       <ul>
                         <li>Operators Manual</li>
                         <li>Clinical Manual</li>
                       </ul>
                     </div>
-                    <div class="col-xs-6">
-                      <h4>White Papers</h4>
+                    <div class="col-lg-6">
+                      <h4 class="text-uppercase">White Papers</h4>
                       <ul>
                         <li>PicoToning: A novel laser skin toning approach for the treatment of asian skin types</li>
                         <li>PicoToning: A novel laser skin toning approach for the treatment of asian skin types</li>
@@ -180,8 +186,8 @@
                   </div>
                 </div>
 
-                <div class="col-xs-2">
-                  More
+                <div class="col-xs-3">
+                  <p class="section-more text-uppercase text-right">More <span class="section-more expand text-center">+</span> </p>
                 </div>
 
                  
@@ -196,7 +202,15 @@
           <section class="row elearning-section materials">
               
             <div class = "col-lg-12 elearning-white">
-              <h4>Webcasts</h4>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4 class="text-uppercase">Webcasts</h4>
+                </div>
+
+                <div class="col-xs-3">
+                   <p class="section-more text-uppercase text-right">More <span class="section-more expand text-center">+</span> </p>
+                </div>
+              </div>
 
                 <img src="images/vid_thumb.jpg">
                 <img src="images/vid_thumb.jpg">
@@ -209,7 +223,16 @@
           <section class="row elearning-section materials">
               
             <div class = "col-lg-12 elearning-white">
-              <h4>Training Presentations</h4>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4 class="text-uppercase">Training Presentations</h4>
+                </div>
+
+                <div class="col-xs-3">
+                   <p class="section-more text-uppercase text-right">More <span class="section-more expand text-center">+</span></p>
+                </div>
+              </div>
+
                 <img src="images/vid_thumb.jpg">
                 <img src="images/vid_thumb.jpg">
                 <img src="images/vid_thumb.jpg">
@@ -229,7 +252,7 @@
           
         </section>
 
-        <aside class = "col-lg-3 pull-left elearning-charcoal elearning-aside">
+        <aside class = "col-lg-3 pull-left elearning-charcoal elearning-aside" id="elearning-panel">
             
           <img src="images/cyno-orange-logo.jpg" class="center-block logo-desktop">
 
@@ -290,7 +313,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="javascripts/bootstrap.min.js"></script>
-
+    <script src="javascripts/scotch-panels-master/src/scotchPanels.js"></script>
+    <script src="javascripts/elearningpanel.js"></script>
    
   </body>
 </html>
