@@ -1,24 +1,42 @@
 jQuery(document).ready(function(){
     
-    var elearningPanel = jQuery('#elearning-panel').scotchPanel({
-        containerSelector: 'body', // As a jQuery Selector
-        direction: 'left', // Make it toggle in from the left
-        duration: 300, // Speed in ms how fast you want it to be
-        transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
-        clickSelector: '.toggle-panel', // Enables toggling when clicking elements of this class
-        distanceX: '70%', // Size fo the toggle
-        enableEscapeKey: true // Clicking Esc will close the panel
-    });
+    
+    if (jQuery(window).width() >= 1200 ) {
 
-    jQuery('.toggle-panel').click(function() {
+        jQuery("#elearning-panel").removeAttr('style');
+    
+    } else {
 
-        jQuery("#elearning-panel").show();
+        var elearningPanel = jQuery('#elearning-panel').scotchPanel({
+            containerSelector: 'body', 
+            direction: 'left', 
+            duration: 300, 
+            transition: 'ease', 
+            clickSelector: '.menu-toggle-panel', 
+            distanceX: '70%', 
+            enableEscapeKey: true 
+        });
 
-    });
+        var loginPanel = jQuery('#login-panel').scotchPanel({
+            containerSelector: 'body', 
+            direction: 'right', 
+            duration: 300, 
+            transition: 'ease', 
+            clickSelector: '.login-toggle-panel', 
+            distanceX: '70%', 
+            enableEscapeKey: true,
 
-    // if (jQuery(window).width() >= 769 ) {
+        });
 
-    //     jQuery("#elearning-panel").removeAttr('style');
-    // }
+
+        
+        jQuery("#elearning-body").click(function(){
+
+            elearningPanel.close();
+            loginPanel.close();
+            console.log('hi');
+        });
+
+    }
 
 });
